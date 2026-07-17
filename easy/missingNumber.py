@@ -1,6 +1,7 @@
 # brute force approach 
 # https://leetcode.com/problems/missing-number
 
+# O(n), sum running O(n), gauss formula happens in O(1) time since it is multiplication/ division
 class Solution:
     def missingNumber(self, nums: List[int]) -> int:
         totalSum = sum(nums)
