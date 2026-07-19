@@ -1,6 +1,7 @@
 # https://leetcode.com/problems/matrix-diagonal-sum/
 
 
+# remainder of division by 2 of any #, is 0( if it is even ) or 1 ( if it is odd )
 def diagonalSum(List):
         length = len(List)
         middle = length // 2 
@@ -12,6 +13,8 @@ def diagonalSum(List):
                 continue
             sum+=List[i][length - i - 1]
         return sum
+
+#  O(n) only 1 for loop, and O(1) space complexity 
 
 print(diagonalSum(
     [
