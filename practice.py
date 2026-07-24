@@ -1,8 +1,10 @@
-def diagonal_sum(matrix):
-    sum = 0
-    for i in range(len(matrix)):
-        sum+=matrix[i][i]
-    return sum
 
-print(diagonal_sum([[1,2,3],[4,5,6],[7,8,9]]))
-
+def first_second(my_list):
+    
+    max,secondMax = 0,0
+    for num in my_list:
+        if num > max:
+            max,secondMax = num,max
+        elif num > secondMax: 
+            secondMax = num
+    return f"{max} {secondMax}"
