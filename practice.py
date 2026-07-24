@@ -1,10 +1,12 @@
 
-def first_second(my_list):
-    
-    max,secondMax = 0,0
-    for num in my_list:
-        if num > max:
-            max,secondMax = num,max
-        elif num > secondMax: 
-            secondMax = num
-    return f"{max} {secondMax}"
+
+
+
+
+arr = [1,1,1,13,3,3,3,"-",3,3,3,"_","_"]
+freq = {}
+for num in arr:
+    freq[num] = freq.get(num,0) + 1
+
+print(list(freq.keys()))
+print(arr.sort())
