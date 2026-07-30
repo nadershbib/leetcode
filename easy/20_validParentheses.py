@@ -43,7 +43,6 @@ class Solution:
                     stack.append(c)
                     continue
                 return False
-            
             if stack[-1] in pairs:
                 if c in pairs:
                     stack.append(c)
@@ -53,4 +52,5 @@ class Solution:
                     return False
         return not stack
              
-            
+
+# iterating once, O(n) time complexity, space complexity O(1) no extra space added
