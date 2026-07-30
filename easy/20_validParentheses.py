@@ -48,4 +48,4 @@ class Solution:
         return not stack
              
 
-# iterating once, O(n) time complexity, space complexity O(1) no extra space added
+# iterating once, O(n) time complexity, space complexity O(n) we're using stack and constantly adding/removing
