@@ -31,11 +31,7 @@
 # solved 7 / 30 / 2026
 class Solution:
     def isValid(self,s:str) -> bool:
-        pairs = {
-            "(":")",
-            "{":"}",
-            "[":"]"
-        }
+        pairs = { "(":")","{":"}","[":"]"}
         stack = []
         for c in s:
             if not stack:
@@ -43,13 +39,12 @@ class Solution:
                     stack.append(c)
                     continue
                 return False
-            if stack[-1] in pairs:
-                if c in pairs:
-                    stack.append(c)
-                elif c == pairs[stack[-1]]:
-                    stack.pop()
-                else:
-                    return False
+            if c in pairs:
+                stack.append(c)
+            elif c == pairs[stack[-1]]:
+                stack.pop()
+            else:
+                return False
         return not stack
              
 
