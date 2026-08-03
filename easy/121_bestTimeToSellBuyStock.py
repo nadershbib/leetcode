@@ -14,4 +14,5 @@ class Solution:
 print(Solution().maxProfit([6,6,5,11]))
 
 # O(n) solution
+# Hope code that apparently works, August 2 2026, will trace it later, pattern recognition kicking in...
 
